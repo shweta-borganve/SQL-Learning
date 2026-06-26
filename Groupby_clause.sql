@@ -19,7 +19,6 @@ values ( 112, "anil", 78, "C", "Pune"),
 (118, "Tanvi", 82, "B", "Ainapur");
 
 select*from student;
-select*from student order by marks ASC;
-select*from student order by marks DESC;
-select*from student order by marks DESC Limit 6;
-drop database college;
+select Distinct city from student;
+select city, name,  count(rollno) from student group by city, name;
+select city, name, avg(marks) from student group by city, name;
