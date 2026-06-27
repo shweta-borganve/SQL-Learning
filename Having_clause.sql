@@ -18,9 +18,5 @@ values ( 112, "anil", 78, "C", "Pune"),
 (117, "aish", 12, "F", "Mole"),
 (118, "Tanvi", 82, "B", "Ainapur");
 
-select*from student;
-select MAX(marks) from student;
-select MIN(marks) from student;
-select COUNT(rollno) from student;
-select AVG(marks) from student;
-drop database college;
+select * from student;
+select city, count(rollno) from student group by city having max(marks) > 65;

@@ -22,3 +22,4 @@ select*from student;
 select Distinct city from student;
 select city, name,  count(rollno) from student group by city, name;
 select city, name, avg(marks) from student group by city, name;
+drop database college;
